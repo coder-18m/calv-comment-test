@@ -66,10 +66,16 @@ CALV | {{ post.title }}
 <div class="author-container" >
   <div class="auth-item-1" >
     <div class="auth-pic">
+      {% if post.author.profile.profile_pic %}
       <img style="width: 100%; border-radius: 50%;" src="{{ post.author.profile.profile_pic.url }}" alt="">
+
+      {% else %}
+      <img style="width: 100%; border-radius: 50%;" src="{% static 'Img/default_pic4.png' %}" alt="">
+      {% endif %}
     </div>
     <div class="author-name">
-      <h1 class="auth-item-2-h1"> {{ post.author.first_name }} {{ post.author.last_name }}</h1>
+      <a href="{% url 'show_profile_page' post.author.profile.id %}"><h1 class="auth-item-2-h1"> {{ post.author.first_name }} {{ post.author.last_name }}</h1></a>
+
     </div>
   </div>
 
