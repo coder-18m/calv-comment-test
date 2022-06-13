@@ -33,23 +33,32 @@
   <div class="wrapper">
     <a class="logo" href="{% url 'index' %}"><img src="{% static 'Img/logo-new2.png' %}" alt=""></a>
         <div class="wrapper-2">
+
+          <!-- and here -->
+          <div class="item-2">
+             <a href="{% url 'home' %}">Posts</a>
+          </div>
           {% if user.is_authenticated %}
 
-          <div class="item-1">
-            <a href="{% url 'edit_profile' %}">Account</a>
+          <div class="sortby-item-1" >
+            <div>
+              <a href="#" class="account-drop"style="padding-bottom: 30px; padding-left: 30px">Account <i class="fa-solid fa-caret-down"></i></a>
+            </div>
+            <div class="dropdown-content-2" >
+
+              <a href="{% url 'logout' %}">Logout</a>
+              <a href="{% url 'edit_profile' %}">Settings</a>
+              <a href="{% url 'edit_profile_page' user.profile.id %}">Edit Pr.</a>
+              <a href="{% url 'show_profile_page' user.profile.id %}">Profile</a>
+
           </div>
-          <div class="item-1">
-            <a href="{% url 'logout' %}">Logout</a>
           </div>
+
           {% else %}
           <div class="item-1">
             <a href="{% url 'login' %}">Sign In</a>
           </div>
           {% endif %}
-          <!-- and here -->
-          <div class="item-2">
-             <a href="{% url 'home' %}">Posts</a>
-          </div>
           <!-- place back here!!!-->
         </div>
   </div>
