@@ -60,11 +60,45 @@ CALV | {{ post.title }}
 </div>
 
 <br>
-<hr>
 <br>
 
 
+<div class="author-container" >
+  <div class="auth-item-1" >
+    <div class="auth-pic">
+      <img style="width: 100%; border-radius: 50%;" src="{{ post.author.profile.profile_pic.url }}" alt="">
+    </div>
+    <div class="author-name">
+      <h1 class="auth-item-2-h1"> {{ post.author.first_name }} {{ post.author.last_name }}</h1>
+    </div>
+  </div>
 
+  <div class="auth-item-2">
 
+    <div class="url-container">
+          {% if post.author.profile.website_url %}
+              <a href="{{ post.author.profile.website_url }}"><i class="fa-solid fa-window-maximize"></i></a>
+          {% endif %}
 
+          {% if post.author.profile.facebook_url %}
+               <a href="{{ post.author.profile.facebook_url }}"><i class="fa-brands fa-facebook"></i></a>
+          {% endif %}
+
+          {% if post.author.profile.twitter_url %}
+              <a href="{{ post.author.profile.twitter_url }}"><i class="fa-brands fa-twitter"></i></a>
+          {% endif %}
+
+          {% if post.author.profile.instagram_url %}
+              <a href="{{ post.author.profile.instagram_url }}"><i class="fa-brands fa-instagram"></i></a>
+          {% endif %}
+  </div>
+  <div class="bio-item">
+    <h1 class="bio-h1" >{{ post.author.profile.bio }}</h1>
+  </div>
+</div>
+<br>
+</div>
+
+<br>
+<br>
 {% endblock %}

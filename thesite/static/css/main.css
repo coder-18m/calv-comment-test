@@ -717,6 +717,49 @@ nav ul ul ul li{
   font-size: 14px;
   font-family: 'Ubuntu', sans-serif;
 }
+/* profile styling */
+.profile-pic-class {
+  border-radius: 37px 37px 37px 37px;
+  margin-right: 20px;
+}
+
+.author-container{
+  flex-direction: column;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+  padding: 12px;
+  border-radius: 37px 37px 37px 37px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.auth-item-2-h1{
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.auth-item-1{
+  display: flex;
+}
+.auth-pic{
+  width: 70px;
+}
+.author-name{
+  margin-top: 10px;
+  margin-left: 16px;
+}
+.bio-h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+}
+.url-container{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.fa-window-maximize, .fa-facebook, .fa-twitter, .fa-instagram{
+  color: black;
+  margin-right: 10px;
+  font-size: 20px;
+}
 
 /* add post form style */
 .addpost-form{
@@ -848,12 +891,6 @@ nav ul ul ul li{
     font-size: 18px;
   }
 
-/* edit form */
-
-
-
-
-
 
 }
 @media (max-width: 540px) {
@@ -972,6 +1009,15 @@ nav ul ul ul li{
     }
     .heading-hr{
       margin-bottom: 36px;
+    }
+    .auth-item-1{
+      width: 350px;
+    }
+    .auth-item-2-h1{
+      font-size: 22px;
+    }
+    .bio-h1{
+      font-size: 18px;
     }
   }
   @media (min-width: 1250px) {

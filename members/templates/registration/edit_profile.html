@@ -7,6 +7,9 @@ CALV | Account Info
 
 {% block content %}
 <h1 class="about-header">Edit Account</h1>
+
+{{ user.profile.bio }}
+
 <form  class="account-form" method="POST">
     {% csrf_token %}
     {{form.as_p}}
