@@ -709,11 +709,13 @@ nav ul ul ul li{
   font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
 }
-.account-form span{
 
-}
 .account-form div{
   display: none;
+}
+.account-form span{
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* add post form style */
