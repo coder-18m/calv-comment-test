@@ -7,13 +7,16 @@ CALV | Register
 
 {% block content %}
 <h1 class="about-header">Register</h1>
-<form  class="form-background" method="POST">
+<form  class="register-form" method="POST">
     {% csrf_token %}
     {{form.as_p}}
-    <button class="form-button">Register</button>
+        <br>
+    <p class="small-p">Have an Account? <a class="small-p" href="{% url 'login' %}">Login!</a></p>
+    <button class="button-54">Register</button>
 </form>
 
-
+<br>
+<br>
 
 
 

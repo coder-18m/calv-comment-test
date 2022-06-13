@@ -129,15 +129,29 @@ nav ul ul ul li{
 
   background: white;
   background-color: rgba(255, 255, 255, .7);
-  padding:30px;
+  padding:20px;
   z-index: -999;
-  font-family: 'Share', cursive;
-  font-size: 20px;
+
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: black;
   text-align: center;
   animation: article-load 800ms ease-in;
+}
+.title-h1{
+  font-family: 'Share', cursive;
+  font-size: 20px;
+}
+.register-btn{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Share', cursive;
+  border: 1.6px solid black;
+  padding: 7px;
+  background: #9DD2E4;
+}
+.register-btn:hover{
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
 }
 /*
 @keyframes article-load{
@@ -263,21 +277,11 @@ nav ul ul ul li{
 }
 
 .heading-hr{
-
+  height: .8px;
   background-color: gray;
   margin-top: 7px;
   box-shadow: none;
-  margin-bottom: 20px;
-}
-.reg-btn{
-  opacity: 1;
-  letter-spacing: 2px;
-  font-size: 24px;
-  padding: 7px;
-  border: 1.5px solid black;
-  font-size: 14px;
-  margin: 20px;
-
+  margin-bottom: 30px;
 }
 /* #B78549;*/
 
@@ -637,6 +641,81 @@ nav ul ul ul li{
   font-size: 20px;
   padding: 7px;
 }
+/* register form */
+.register-form{
+
+  border-radius: 37px 37px 37px 37px;
+
+  width: 300px;
+  margin: auto;
+}
+.register-form label{
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.register-form p label{
+  margin-bottom: 20px;
+}
+.register-form ul.errorlist{
+  font-size: 14px;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.register-form ul.errorlist li{
+  list-style: none;
+}
+.register-form ul{
+  display: none;
+}
+.register-form span{
+  display: none;
+}
+.register-form input{
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid gray;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+}
+/* account form styling */
+.account-form{
+  border-radius: 37px 37px 37px 37px;
+
+  width: 300px;
+  margin: auto;
+}
+.account-form input{
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid gray;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+}
+.account-form label{
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.account-form span{
+
+}
+.account-form div{
+  display: none;
+}
+
 /* add post form style */
 .addpost-form{
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
@@ -677,6 +756,18 @@ nav ul ul ul li{
 }
 .like-container{
   margin-right: 20px;
+}
+@media (min-width: 750px) {
+  .box-h1{
+    padding: 30px;
+  }
+  .title-h1{
+    font-size: 30px;
+  }
+  .register-btn{
+    font-size: 22px;
+
+  }
 }
 
 @media (min-width: 768px) {
@@ -770,10 +861,6 @@ nav ul ul ul li{
   #pack-id{
     display: block;
   }
-  .box-h1{
-    font-size: 9px;
-    padding: 14px;
-  }
 #donate-btn{
   padding: 5px;
 }
@@ -782,10 +869,7 @@ nav ul ul ul li{
 }
 }
 @media all and (max-width: 980px) {
-  .box-h1{
-    font-size: 16px;
 
-  }
 }
 @media (max-width: 800px){
   .form-category{
@@ -793,10 +877,6 @@ nav ul ul ul li{
   }
 }
 @media all and (max-width: 800px){
-  .box-h1{
-    font-size: 9px;
-    padding: 14px;
-  }
 #donate-btn{
   padding: 5px;
   border: 1.5px solid black;
@@ -877,6 +957,19 @@ nav ul ul ul li{
   @media (min-width: 970px) {
     .box{
       padding-bottom: 750px;
+    }
+    .title-h1{
+      font-size: 40px;
+    }
+    .register-btn{
+      font-size: 26px;
+      padding: 10px;
+    }
+    .box-h1{
+      padding: 40px;
+    }
+    .heading-hr{
+      margin-bottom: 36px;
     }
   }
   @media (min-width: 1250px) {

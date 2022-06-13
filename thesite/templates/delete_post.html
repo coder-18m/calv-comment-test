@@ -7,6 +7,7 @@ CALV | Delete Post
 
 {% block content %}
 {% if request.user.is_superuser %}
+<a class="back-btn" href="{% url 'home' %}"> <i class="fa-solid fa-arrow-left"></i> Back</a>
 <br/>
 <h1 class="about-header">Delete: {{ post.title }}</h1>
 

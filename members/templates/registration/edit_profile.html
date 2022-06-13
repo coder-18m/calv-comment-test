@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+CALV | Account Info
+{% endblock%}
+
+
+{% block content %}
+<h1 class="about-header">Edit Account</h1>
+<form  class="account-form" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+        <br>
+    <button class="button-54">Update Account</button>
+</form>
+
+<br>
+<br>
+
+
+
+{% endblock %}
