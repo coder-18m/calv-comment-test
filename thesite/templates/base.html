@@ -50,11 +50,11 @@
               <a href="{% url 'edit_profile' %}">Settings</a>
 
               {% if user.profile.id %}
-                  <a href="{% url 'edit_profile_page' user.profile.id %}">Edit Pr.</a>
-                  <a href="{% url 'show_profile_page' user.profile.id %}">Profile</a>
+                  <a href="{% url 'edit_profile_page' user.profile.id %}">Edit Profile</a>
+                  <a href="{% url 'show_profile_page' user.profile.id %}">View Profile</a>
 
               {% else %}
-                  <a href="{% url 'create_profile_page' %}">Add Pr.</a>
+                  <a href="{% url 'create_profile_page' %}">Add Profile</a>
               {% endif %}
 
 

@@ -408,39 +408,33 @@ nav ul ul ul li{
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.sortby-item-1{
-  margin-right: 20px;
-  margin-left: 20px;
-}
+
 .sortby-wrapper{
   margin-right: 20px;
 }
 .dropdown-content{
-  padding: 20px;
   background-color: #ccb5aa;
   display: flex;
   flex-direction: column;
 }
 .dropdown-content a{
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px;
+  display: block;
   color: black;
   font-size: 20px;
-  margin: 6px;
   font-family: 'Barlow Condensed', sans-serif;
 }
 .dropdown-content-2{
-  padding: 20px;
+  left: 0;
   background-color: #E6E5E1;
   display: flex;
   flex-direction: column;
 }
 .dropdown-content-2 a{
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
+  display: block;
   color: black;
   font-size: 20px;
-  margin: 6px;
   font-family: 'Barlow Condensed', sans-serif;
 }
 .sort-a{
@@ -472,7 +466,7 @@ nav ul ul ul li{
 
 }
 .sortby-item-1{
-
+  margin-left: 10px;
   display: inline-block;
   position: relative;
 }
