@@ -48,6 +48,8 @@
 
               <a href="{% url 'logout' %}">Logout</a>
               <a href="{% url 'edit_profile' %}">Settings</a>
+              <a href="{% url 'export_users_xls' %}">Export all users</a>
+
 
               {% if user.profile.id %}
                   <a href="{% url 'edit_profile_page' user.profile.id %}">Edit Profile</a>
